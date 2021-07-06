@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>  
-        .body{
+        body{
             margin: 0;
             height: 100vh;
             width: 100%;
@@ -19,37 +19,160 @@
             border-radius: 40px;
             height: 600px;
             width: 300px;
+            background: #CCEFFF;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.3),
+                        0 15px 12px rgba(0,0,0,0.22);
         }
         .layer-1{
             position: absolute;
+            z-index: 1;
+            height: 450px;
+            width: 80px;
+            background: white;
+            bottom: 0;
+            right: 60px;
         }
         .layer-2{
             position: absolute;
+            z-index: 2;
+            height: 450px;
+            width: 80px;
+            background: white;
+            bottom: 0;
+            left: 60px;
         }
         .layer-3{
             position: absolute;
+            z-index: 3;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 220px;
+            height: 400px;
+            background: #bb6d52;
+            bottom: 0;
+            border-radius: 20px;
         }
         .layer-4{
             position: absolute;
+            z-index: 4;
+            height: 360px;
+            width: 80px;
+            background: white;
+            bottom: 0;
+            left: 70px;
         }
         .layer-5{
             position: absolute;
+            z-index: 5;
+            left: 0;
+            margin: 0 auto;
+            height: 310px;
+            width: 220px;
+            background: #2e8a57;
+            bottom: 0;
+            border-radius: 30px;
         }
         .layer-6{
             position: absolute;
+            z-index: 6;
+            height: 260px;
+            width: 80px;
+            background: white;
+            bottom: 0;
+            right: 40px;
         }
         .layer-7{
             position: absolute;
+            z-index: 7;
+            background: #02d102;
+            right: 0;
+            margin: 0 auto;
+            height: 210px;
+            width: 160px;
+            bottom: 0;
+            border-radius: 30px;
         }
         .layer-8{
             position: absolute;
+            z-index: 8;
         }
         .layer-9{
             position: absolute;
+            z-index: 9;
         }
         .layer-10{
             position: absolute;
+            z-index: 10;
         }
+
+        /*Left Cloud*/
+        .cloud1{ 
+            width:130px;
+            height:50px;
+            background:#ECEFF1;
+            box-shadow: 10px 10px rgba(0,0,0,0.2);
+            border-radius:100px;
+            z-index: 8;
+            position: absolute;
+            bottom: 0;
+        }
+        .cloud1::after, .cloud1::before{
+            content:"";
+            background:inherit;
+            border-radius:inherit;
+        }
+        .cloud1::after{
+            position: absolute;
+            bottom: 10px;
+            left:30px;
+            width:80px;
+            height:60px;
+            z-index: 8;
+        }
+        .cloud1::before{
+            position: absolute;
+            bottom: 10px;
+            left:10px;
+            width:70px;
+            height:80px;     
+            z-index: 8;
+        }
+
+        /*Right Cloud*/
+        .cloud2{ 
+            width:130px;
+            height:50px;
+            background:#ECEFF1;
+            box-shadow: 10px 10px rgba(0,0,0,0.2);
+            border-radius:100px;
+            z-index: 9;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .cloud2::after, .cloud2::before{
+            content:"";
+            background:inherit;
+            border-radius:inherit;
+        }
+        .cloud2::after{
+            position: absolute;
+            width:80px;
+            height:60px;
+            z-index: 9;
+            bottom: 10px;
+            right:30px;
+        }
+        .cloud2::before{
+            position: absolute;
+            width:70px;
+            height:80px;     
+            z-index: 9;
+            bottom: 10px;
+            right:10px;
+        }
+
     </style>
 </head>
 <body>
@@ -62,9 +185,10 @@
         <div class="layer-5"></div>
         <div class="layer-6"></div>
         <div class="layer-7"></div>
-        <div class="layer-8"></div>
-        <div class="layer-9"></div>
+        <div class="cloud1"></div>
+        <div class="cloud2"></div>
         <div class="layer-10"></div>
+
     </div>
 </body>
 </html>
