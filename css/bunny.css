@@ -1,0 +1,258 @@
+.phone{
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    height: 600px;
+    width: 300px;
+    background: #CCEFFF;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3),
+                0 15px 12px rgba(0,0,0,0.22);
+}
+.layer-1{
+    position: absolute;
+    z-index: 1;
+    height: 520px;
+    width: 80px;
+    /*background: burlywood;*/
+    bottom: 0;
+    right: 60px;
+}
+.layer-2{
+    position: absolute;
+    z-index: 2;
+    height: 520px;
+    width: 80px;
+    /*background: white;*/
+    bottom: 0;
+    left: 60px;
+}
+.layer-3{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 470px;
+    background: #023900;
+    bottom: 0;
+    border-radius: 20px;
+}
+.layer-4{
+    position: absolute;
+    z-index: 4;
+    height: 360px;
+    width: 80px;
+    /*background: white;*/
+    bottom: 0;
+    left: 70px;
+}
+.layer-5{
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    margin: 0 auto;
+    height: 310px;
+    width: 220px;
+    background: #2e8a57;
+    bottom: 0;
+    border-radius: 30px;
+}
+.layer-6{
+    position: absolute;
+    z-index: 6;
+    height: 260px;
+    width: 80px;
+    /*background: white;*/
+    bottom: 0;
+    right: 40px;
+}
+.layer-7{
+    position: absolute;
+    z-index: 7;
+    background: #02d102;
+    right: 0;
+    margin: 0 auto;
+    height: 210px;
+    width: 160px;
+    bottom: 0;
+    border-radius: 30px;
+}
+
+/*Left Cloud*/
+.cloudLeft{ 
+    width:130px;
+    height:50px;
+    background:#ECEFF1;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+}
+.cloudLeft::after, .cloudLeft::before{
+    content:"";
+    background:inherit;
+    border-radius:inherit;
+}
+.cloudLeft::after{
+    position: absolute;
+    bottom: 10px;
+    left:30px;
+    width:80px;
+    height:60px;
+    z-index: 9;
+}
+.cloudLeft::before{
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    width:70px;
+    height:80px;     
+    z-index: 9;
+}
+
+/*Right Cloud*/
+.cloudRight{ 
+    width:130px;
+    height:50px;
+    background:#ECEFF1;
+    /*box-shadow: 10px 10px rgba(0,0,0,0.2);*/
+    border-radius:100px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.cloudRight::after, .cloudRight::before{
+    content:"";
+    background:inherit;
+    border-radius:inherit;
+}
+.cloudRight::after{
+    position: absolute;
+    width:80px;
+    height:60px;
+    z-index: 10;
+    bottom: 10px;
+    right:30px;
+}
+.cloudRight::before{
+    position: absolute;
+    width:70px;
+    height:80px;     
+    z-index: 10;
+    bottom: 10px;
+    right:10px;
+}
+
+/*Center Cloud*/
+.cloudCenter{ 
+    width:150px;
+    height:70px;
+    background:#66a167;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    z-index: 8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cloudCenter::after, .cloudCenter::before{
+    content:"";
+    background:inherit;
+    border-radius:inherit;
+}
+.cloudCenter::after{
+    position: absolute;
+    width:90px;
+    height:70px;
+    z-index: 8;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cloudCenter::before{
+    position: absolute;
+    width:80px;
+    height:90px;     
+    z-index: 8;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/*Bunny 1*/
+/*Left*/
+.left-ear--outer {
+   background: white;
+   border-radius: 90%;
+   width: 20px; 
+   height: 50px;
+   position: absolute;
+   left: 10px;
+}
+
+.left-ear--inner {
+   background: pink;
+   border-radius: 90%;
+   width: 10px; 
+   height: 40px;
+   position: absolute;
+   left: 15px;
+   top: 8px;
+}
+/*Right*/
+.right-ear--outer {
+    background: white;
+    border-radius: 90%;
+    width: 20px; 
+    height: 50px;
+    position: absolute;
+    right: 10px;
+ }
+ 
+ .right-ear--inner {
+    background: pink;
+    border-radius: 90%;
+    width: 10px; 
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+ }
+/*Head*/
+.head {
+    background: white;
+    border-radius: 50%;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+/*Eye*/
+.head__eye {
+    background: gray;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 15px;
+}
+
+/*Left*/
+.head__eye--left {
+    left: 30px;
+}
+
+.head__eye--right {
+    right: 30px;
+}
