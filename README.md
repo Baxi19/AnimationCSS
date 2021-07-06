@@ -1,7 +1,7 @@
 
 :boom: HTML &amp;&amp; CSS
 
-# <div align="center"Animation CSS :rocket:</div>
+<div align="center"Animation CSS :rocket:</div>
 
 <div class="row" align="center">
   <h3>Layout of the design :octocat:</h3>
